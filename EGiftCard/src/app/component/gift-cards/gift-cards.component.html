@@ -1,0 +1,172 @@
+<p>gift-cards works!</p>
+
+<div>
+<h3>GiftCard Form</h3>
+</div>
+<table class="table table-bordered">
+
+    <tr *ngIf="giftcard.length > 0">
+
+        
+
+        <th>About GiftCard</th>
+        <th>Maximum Amount</th>
+
+        <th>BrandList</th>
+        <th>GiftCard Id</th>
+
+        <th>GiftCard Name</th>
+    </tr>
+
+    <tr *ngFor="let gift of giftcard">
+      
+      
+
+        
+
+        <td>{{gift.aboutGiftCard}}</td>
+        <td>{{gift.maxAmount}}</td>
+        
+        
+
+        <td><input type="button" (click)="sendGiftCard(gift.giftCardId)" value="Send" class="btn btn-primary"></td>
+
+       <td><input type="button" (click)="(emp.employeeId)"value="Update" class="btn btn-primary"></td>
+
+    </tr>
+
+</table>
+
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="gift-cards.component.css" type="text/css" />
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td colspan="2">
+                <div class="header">Select Occassion</div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan="4">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="div1">
+                    <img src="../../../assets/images/1.jpg" style="width: 100%;"  />
+                    <p>Happy Birthday!</p>
+                    <button class="btn btn1"  routerLink="brands" routerLinkActive="active-link">Birthday</button>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="../../../assets/images/2.jpg" style="width: 100%;" />
+                <p>Happy Wedding!</p>
+                <button  class="btn btn2" routerLink="brands" routerLinkActive="active-link">Wedding</button>
+                <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="../../../assets/images/3.jpg" style="width: 100%;" />
+                <p>Happy Anniversary!</p>
+                <button class="btn btn3" routerLink="brands" routerLinkActive="active-link">Anniversary</button>
+                <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="../../../assets/images/4.jpg" style="width: 100%;" />
+                <p>Congratulations!</p>
+                <button class="btn btn4" routerLink="brands" routerLinkActive="active-link">Congratualation</button>
+                <br /><br />
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="div1">
+                    <img src="../../../assets/images/5.jpg" style="width: 100%;" />
+                    <p>Best Wishes!</p>
+                    <button class="btn btn1" routerLink="brands" routerLinkActive="active-link">Best Wishes</button>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="img2.png" style="width: 50%;" />
+                <p>Say Thank You with Gifts</p>
+                <button class="btn btn2" routerLink="brands" routerLinkActive="active-link">Thank You</button>
+                <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="img3.png" style="width: 50%;" />
+                <p>Enjoy Festivals with Gifts</p>
+                <button class="btn btn3" routerLink="brands" routerLinkActive="active-link">Diwali Festivals</button>
+                <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="img4.png" style="width: 50%;" />
+                <p>Enjoy Festivals with Gifts</p>
+                <button class="btn btn4" routerLink="brands" routerLinkActive="active-link">Holi Festivals</button>
+                <br /><br />
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="div1">
+                    <img src="img1.png" style="width: 50%;" />
+                    <p>The Quick Brown Fox Jumps Over The Lazy Dog..</p>
+                    <button class="btn btn1" routerLink="brands" routerLinkActive="active-link">Category 1</button>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="img2.png" style="width: 50%;" />
+                <p>The Quick Brown Fox Jumps Over The Lazy Dog..</p>
+                <button class="btn btn2" routerLink="brands" routerLinkActive="active-link">Category 2</button>
+                <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="img3.png" style="width: 50%;" />
+                <p>The Quick Brown Fox Jumps Over The Lazy Dog..</p>
+                <button class="btn btn3" routerLink="brands" routerLinkActive="active-link">Category 3</button>
+                <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                <img src="img4.png" style="width: 50%;" />
+                <p>The Quick Brown Fox Jumps Over The Lazy Dog..</p>
+                <button class="btn btn4" routerLink="brands" routerLinkActive="active-link">Category 4</button>
+                <br /><br />
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+       
+    </table>
+</body>
+
+</html>
+
